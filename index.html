@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Selection Frame</title>
+  </head>
+  <body>
+  <h1>Simple Selection Frame</h1>
+    <div class="info">
+      <div class="info__coordinates">
+        <h3>Current coordinates</h3>
+        <span class="coordinates"></span>
+      </div>
+      <h3>Input handlers</h3>
+      <div class="info__inputs">
+        <label for="width">
+          Width:
+          <input id="width" value="100" type="number" class="width" />
+        </label>
+        <label for="height">
+          Height:
+          <input id="height" value="100" type="number" class="height" />
+        </label>
+        <label for="minWidth">
+          Min width:
+          <input id="minWidth" type="number" class="minWidth" />
+        </label>
+        <label for="minHeight">
+          Min height:
+          <input id="minHeight" type="number" class="minHeight" />
+        </label>
+      </div>
+    </div>
+      <div id="SSF"></div>
+    <div class="controls">
+      <button type="button" data-keep-aspect-ratio class="button">Keep aspect ratio</button>
+      <button type="button" data-disable class="button">Disable</button>
+      <button type="button" data-points-off class="button">Points off</button>
+      <button type="button" data-reset class="button">Reset</button>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

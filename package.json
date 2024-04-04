@@ -1,0 +1,38 @@
+{
+  "name": "simple-selection-frame",
+  "private": false,
+  "version": "0.0.1",
+  "description": "is a library for working with a movable container frame",
+  "main": "SimpleSelectionFrame.js",
+  "types": "SimpleSelectionFrame.d.ts",
+  "style": "simpleSelectionFrame.css",
+  "readme": "README.md",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "viteBuild": "tsc && vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dist/",
+    "copy-css": "copyfiles -u 2 src/**/*.css src/**/*.md dist/",
+    "packageBuild": "npm run clean && tsc && npm run copy-css"
+  },
+  "keywords": [
+    "frame",
+    "ui",
+    "typescript",
+    "crop",
+    "area",
+    "css",
+    "ruler",
+    "photoEditor",
+    "imageCropper"
+  ],
+  "author": "Nikitin Roman",
+  "license": "MIT",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}

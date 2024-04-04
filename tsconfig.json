@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "declaration": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": [
+    "*.ts",
+    "src/**/*.ts",
+  ],
+  "exclude": [
+    "./dist"
+  ]
+}
