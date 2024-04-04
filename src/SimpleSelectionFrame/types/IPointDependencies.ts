@@ -1,4 +1,4 @@
-import { Point } from "../utils/Point.ts";
+import { Point } from "../utils/Point";
 
 export interface IPointDependencies {
 

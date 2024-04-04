@@ -1,7 +1,7 @@
-import {IState} from "../types/IState.ts";
-import {initialAreaPosition} from "./InitialAreaPosition.ts";
+import {IState} from "../types/IState";
+import {initialAreaPosition} from "./InitialAreaPosition";
 
-export const initialState: IState = {
+export const _initialState: IState = {
     areaPosition: { ...initialAreaPosition },
     prevAreaPosition: { ...initialAreaPosition },
     activePoint: null,

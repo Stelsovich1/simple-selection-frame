@@ -1,5 +1,5 @@
-import { IPointDependencies } from "../types/IPointDependencies.ts";
-import { Point } from "./Point.ts";
+import { IPointDependencies } from "../types/IPointDependencies";
+import { Point } from "./Point";
 
 /**
  * объект-словарь, который хранит зависимости точек друг от друга.

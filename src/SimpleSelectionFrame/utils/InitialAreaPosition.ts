@@ -1,4 +1,4 @@
-import { IArea } from "../types/IArea.ts";
+import { IArea } from "../types/IArea";
 
 export const initialAreaPosition: IArea = {
   top: 0,

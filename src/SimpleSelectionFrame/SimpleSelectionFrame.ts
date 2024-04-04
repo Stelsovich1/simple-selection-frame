@@ -1,13 +1,13 @@
 import "./simpleSelectionFrame.css";
 
-import {IArea} from "./types/IArea.ts";
-import {IPosition} from "./types/IPosition.ts";
-import {initialAreaPosition} from "./utils/InitialAreaPosition.ts";
-import {initialPointPositions} from "./utils/InitialPointPositions.ts";
-import {Point} from "./utils/Point.ts";
-import {pointDependencies} from "./utils/PointDependencies.ts";
-import {initialState} from "./utils/InitialState.ts";
-import {IState} from "./types/IState.ts";
+import {IArea} from "./types/IArea";
+import {IPosition} from "./types/IPosition";
+import {initialAreaPosition} from "./utils/InitialAreaPosition";
+import {initialPointPositions} from "./utils/InitialPointPositions";
+import {Point} from "./utils/Point";
+import {pointDependencies} from "./utils/PointDependencies";
+import {_initialState} from "./utils/_initialState";
+import {IState} from "./types/IState";
 
 export interface ISizes {
   width: number;
@@ -23,7 +23,7 @@ export class SimpleSelectionFrame {
   // Поля для хранения элементов контейнера, области и точек
   private readonly container: HTMLElement;
 
-  private simpleSelectionState: IState = { ...initialState };
+  private simpleSelectionState: IState = { ..._initialState };
 
   // элемент области с бекграундом за пределами рамки
   private area: HTMLElement | undefined;
@@ -81,7 +81,7 @@ export class SimpleSelectionFrame {
    */
   public reset(areaPosition = initialAreaPosition): void {
     this.setBoxArea({ ...areaPosition });
-    this.simpleSelectionState = { ...initialState };
+    this.simpleSelectionState = { ..._initialState };
   }
 
   /**

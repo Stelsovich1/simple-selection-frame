@@ -17,8 +17,7 @@
     "noUncheckedIndexedAccess": true
   },
   "include": [
-    "*.ts",
-    "src/**/*.ts",
+    "src/SimpleSelectionFrame/**/*.ts",
   ],
   "exclude": [
     "./dist"

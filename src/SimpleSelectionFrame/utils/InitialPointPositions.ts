@@ -1,5 +1,5 @@
-import { IPosition } from "../types/IPosition.ts";
-import { Point } from "./Point.ts";
+import { IPosition } from "../types/IPosition";
+import { Point } from "./Point";
 
 export const initialPointPositions: Record<Point, IPosition> = {
   [Point.E]: { top: 50, left: 100 },

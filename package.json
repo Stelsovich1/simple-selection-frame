@@ -13,8 +13,9 @@
     "viteBuild": "tsc && vite build",
     "preview": "vite preview",
     "clean": "rimraf dist/",
-    "copy-css": "copyfiles -u 2 src/**/*.css src/**/*.md dist/",
-    "packageBuild": "npm run clean && tsc && npm run copy-css"
+    "copy-files": "copyfiles -u 2 src/**/*.css src/**/*.md dist/",
+    "copy-packagejson": "copyfiles package.json dist/",
+    "packageBuild": "npm run clean && tsc && npm run copy-files && npm run copy-packagejson"
   },
   "keywords": [
     "frame",

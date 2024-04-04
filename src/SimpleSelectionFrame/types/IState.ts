@@ -1,5 +1,5 @@
-import {IArea} from "./IArea.ts";
-import {ISizes} from "../SimpleSelectionFrame.ts";
+import {IArea} from "./IArea";
+import {ISizes} from "../SimpleSelectionFrame";
 
 export interface IState {
     /**
