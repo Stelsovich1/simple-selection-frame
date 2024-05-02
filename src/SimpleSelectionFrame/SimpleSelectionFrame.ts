@@ -571,6 +571,17 @@ export class SimpleSelectionFrame {
       }
     }
 
+    // Костыль проверки - если у нас превышен максимальный размер области,
+    // то возвращается прежний размер рамки - ничего не меняется,
+    // иначе доходя до предела максимального размера, происходит баг,
+    // меняющий размер рамки с нарушением соотношения сторон
+    if (height >= 100 || width >= 100) {
+
+      this.setBoxArea(this.simpleSelectionState.prevAreaPosition);
+
+      return;
+    }
+
     this.setBoxArea({ top: top || this.simpleSelectionState.areaPosition.top, left: left || this.simpleSelectionState.areaPosition.left, width, height });
   }
 
