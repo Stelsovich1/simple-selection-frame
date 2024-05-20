@@ -3,6 +3,10 @@
   "private": false,
   "version": "0.0.1",
   "description": "is a library for working with a movable container frame",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stelsovich1/simple-selection-frame.git"
+  },
   "main": "SimpleSelectionFrame.js",
   "types": "SimpleSelectionFrame.d.ts",
   "style": "simpleSelectionFrame.css",
