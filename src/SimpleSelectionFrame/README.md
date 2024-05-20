@@ -11,6 +11,8 @@
 * The frame position is adjusted relative to the left and top borders of the parent container;
 * Adapted for touch devices;
 
+![example.gif](public%2Fexample.gif)
+
 ## Installation
 
 ```
